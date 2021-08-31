@@ -1,0 +1,428 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+.text-left{
+ text-align: left;  
+}   
+.text-center{      
+    text-align: center; 
+}
+.text-right{
+    text-align: right; 
+}
+.clear::after{
+    content: ""; 
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{ 
+    float: right;
+}
+ img{
+    max-width: 100%; 
+}
+ a{
+    text-decoration: none; 
+}
+
+.mid-content{ 
+    max-width: 1000px; 
+    margin: auto;
+} 
+body,h1,h2,h3,h4,h5,h6, span{
+    font-family: 'Work Sans', sans-serif  
+} 
+
+ 
+/* header seecetion */
+.header-secetion{ 
+   background: #000; 
+   padding: 10px 0;
+   position: fixed;
+   width: 100%;
+   z-index: 99;
+}
+.heder-logo{
+    width: 50%;
+}
+.heder-menu{
+    width: 50%;
+}
+.heder-logo img{
+    width: 17%;
+    margin-right: 20px;
+    float: left;
+}
+.primary-manu{}
+.primary-manu ul{
+    
+}
+.primary-manu ul li{
+    display: inline-block;
+}
+.primary-manu ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 16px; 
+    position: relative; 
+    
+}
+.primary-manu ul li a::before{
+    content: "";
+    bottom: 12px;
+    left: 15px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+}
+.primary-manu ul li a:hover::before{
+    width: 60%;
+}
+.primary-manu ul li ul li a:hover::before{
+    width: 32%;
+  background:black;
+}
+ /* dorpdawn manu */
+ .primary-manu ul li{
+     position: relative;
+    
+ }
+.primary-manu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 123%;
+    width: 165px;
+    visibility: hidden;
+    opacity: 0;
+    background: #000;
+    border-top:2px solid #fff ;
+    transition: .4s;
+
+}
+.primary-manu ul li ul li{
+    display: block;
+
+}
+
+.primary-manu ul li:hover ul{
+   opacity: 1;
+   visibility: visible;
+}
+.primary-manu ul li ul li a{
+  display: block;
+}
+.primary-manu ul li ul li a::before{
+    
+    width:0; 
+
+}
+.primary-manu ul li ul li:hover a{
+    color: black;
+    background: #fff;
+
+}
+
+
+/* ==========bannar secetion========= */
+
+.Baner-secetion{
+    background-image: url(https://i.postimg.cc/GpFsZ2j2/a0c6042d4612d7adf44692fffac7e082.jpg);
+    background-position: center;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    padding: 200px 0;
+}
+
+.baground-secetion h1{
+  font-size: 39px;
+  margin-bottom: 10px;
+  color: #223127;
+  font-weight: bold;
+} 
+.baground-secetion P{
+
+    font-size: 19px;
+    font-weight: bold;
+}
+.baground-secetion a{
+
+   
+}
+
+.btn1{
+    padding: 15px 26px;
+    background: black;
+    margin: 17px 7px;
+    margin-bottom: 22px;
+    display: inline-block;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 2px 1px 4px rgb(10, 10, 10);
+    transition: .4s;
+}
+.btn1:hover{
+    background: #fff;
+    color: black;
+
+}
+.btn2{
+    padding: 15px 26px;
+    background: #fff;
+    margin: 17px 7px;
+    margin-bottom: 22px;
+    display: inline-block;
+    border-radius: 10px;
+    color: black ;
+    font-size: 14px;
+    font-weight: bold;
+   
+}
+.btn2:hover{
+   background:black;
+   color:#fff;
+
+}
+/* =========about secetion========= */
+.about-secetion{
+    padding: 50px 0;
+    background: #87a471;
+    /* z-index: -1; */
+}
+.about-secetion h1{
+    margin-bottom: 25px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+   
+}
+.about-secetion h1::before{
+    content: "";
+    bottom: -1px;
+    left: 411px;
+    width: 177px;
+    height: 2px; 
+    background-color: #fff;
+    position: absolute;
+    display: inline-block;
+}
+.about-left p{
+   color: #fff;
+   line-height: 1.2em;
+   margin-bottom: 30px;
+}
+.about-right img{
+    width: 200px;
+    /*! margin-right: 39px; */
+}
+.about-left{
+    width: 48%;
+}
+
+.about-right{
+    width: 39%;
+}
+
+
+/* ===================icon secetion============== */
+.icon-secetion{
+    padding: 30px 0;
+    background: #606a64;
+}
+.contain h1{
+    color: #fff;
+    margin-bottom: 23px;
+    position: relative;
+}
+.contain h1::before{
+    content: '';
+    top: 39px; 
+   
+    left: 420px;
+    width: 162px;
+    height: 2px; 
+    background-color: #fff;
+    position: absolute;
+    display: inline-block;
+}
+
+
+.contain h3{
+    color: #fff;
+    margin-bottom: 15px;
+}
+.contain p{
+    color: #e0dfdf;
+    line-height: 1.4em;
+}
+.box-secetion{
+
+}
+
+.box-item{
+ width: 28.3%;
+ 
+ margin: 14px;
+ background-color: #fff;
+ box-shadow: 10px;
+ padding: 23px 20px;
+ border-radius: 10px; 
+ box-sizing: border-box;
+ margin: 25px;
+ 
+}
+.box-icon{
+    width: 50px;
+    float: left;
+    min-height: 168px;
+    color: #02bc9d;
+    margin-right: 7px;
+    font-size: 30px;
+}
+
+
+/* <!-- =========picuter secetion========= --> */
+.picuter-secetion{
+    padding: 56px 0;
+    background: #87a471;
+}
+.picuter-heding h2{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.picuter-heding p{
+    color: #fff;
+    margin-bottom: 55px;
+}
+.pic img{
+    
+    width: 449px;
+}
+.motel-bannaer{
+    width: 45%;
+    border: 1px solid #fff;
+    margin: 9px;
+    
+  
+}
+.pic-contain p{
+  color:#506a85 ;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.pic-contain h4{
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  
+  margin-bottom: 8px;
+}
+/* ============ */
+
+.imgpic{
+    width: 22%;
+    
+    margin: 8px;
+    /*! margin-bottom: 97px; */
+    margin-top: 37px;
+}
+
+
+/* =============social-secetion=========================== */
+
+.social-secetion{
+    padding: 28px 0;
+    background: #5b9776;
+}
+ .my h1{
+    text-align: center;
+    color: #fff;
+    position: relative;
+    /*! margin-top: 22px; */
+}
+.my h1::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: #fff;
+    width: 270px;
+    top: 38px;
+    left: 363px;
+    display: inline-block;
+}
+.social-pic{
+    width: 29.3%;
+    margin: 13px;
+    margin-top: 75px;
+}
+
+.rex{
+    
+    display: inline block;
+    font-size: 24px;
+   
+   text-align: center;
+    margin-top: 8px;
+    color: #fff; 
+    transition: .4s;
+    margin-left: 8px;
+    display: inline-block;
+}
+.rex:hover{
+    color: #566880;
+}
+
+/* =============topfooter-secetion================== */
+
+.topfooter-secetion{
+    padding: 60px 0;
+    background: #606a64;
+}
+.topfooter h2{
+  color: #fff;
+  margin-bottom: 15px;
+  
+}
+.topfooter p{
+ color: #dddddc;
+ line-height: 20px;
+ font-size: 15px;
+}
+
+.topfooter a{
+    padding: 15px 60px;
+    background: #00bc9c;
+    /*! margin-top: 35px; */
+    display: inline-block;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: .4s;
+    font-size: 11px;
+}
+.topfooter a:hover{
+    background: #477488;
+}
+
+/* ======footer======= */
+
+.footer-secetion{
+    padding: 26px 0;
+    background: #000;
+   
+}
+.footer{
+    
+    color: #fff;
+    text-align: center;
+
+}
